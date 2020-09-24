@@ -10,12 +10,9 @@ Loggregator takes advantage of SQL functionality using a lightweight relational 
 3. Then 'go build' 
 4. run with ./loggregator
 
-Thank you,
--Laura
-
 # Scenario
 
-You are given a very simple log of events(`serverlog.csv`) for a server that allows users to upload or download files.
+Consumes a very simple log of events(`serverlog.csv`) for a server that allows users to upload or download files.
 
 
 Using this log file as input, write a Go program that will output the following metrics:
@@ -31,8 +28,3 @@ The log is represented by a CSV formatted file where column data is ordered: `ti
 - The `username` is a unique identifier for the user.
 - The `operation` indicates if an `upload` or `download` occurred, no other values will appear in this column.
 - The `size` is an integer reflecting file size in `kB`.
-
-You may use whatever packages you feel will be useful to solve this challenge.
-
-# Important Note
-The intention of this coding challenge is to gauge a candidate's ability to program in Go, write clean code, and discuss their work with others. While we would like to see your best work, we don't want candidates to spend a large amount of their free time optimizing their solution to this challenge. So, our expectation is not necessarily to receive an optimal or even completely correct solution. With this in mind, we recommend spending about an hour on this challenge.# ctrl_cmd_challenge
